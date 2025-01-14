@@ -1,0 +1,30 @@
+.menucolor{
+  background-color: #f8f9f0;
+}
+
+.colormenu{
+  color: #071952!important;
+}
+
+.heading{
+  font-size: 1.3rem;
+  color: #071952!important;
+}
+
+.headtwo{
+  font-size: 16px;
+}
+
+.logoimge{
+  width: 50px;
+  height: 70px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .menucolor{
+    background-color: #EBF4F6;
+   }
+   .colormenu{
+      color: rgb(31, 31, 31)!important;
+   }
+}
