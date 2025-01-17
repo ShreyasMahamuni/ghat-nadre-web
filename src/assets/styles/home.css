@@ -1,0 +1,15 @@
+.side-image {
+  height: auto;
+  width: 100%;
+}
+
+.side-image img {
+  height: inherit;
+  width: auto;
+}
+
+.readMoreButton {
+  font-size: 0.9rem;
+  background-color: #ff0000e9 !important;
+  color: #ffffff !important;
+}

@@ -1,30 +1,83 @@
-.menucolor{
-  background-color: #f8f9f0;
+/* Topbar */
+
+.topbar ul {
+  list-style: none;
+}
+.topbar {
+  background-color: #ff0000e9; /*#012348; */
+}
+.topbar li {
+  display: inline-block;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  padding: 0.5rem;
 }
 
-.colormenu{
-  color: #071952!important;
+.topbar li:nth-child(1) {
+  border-right: 2px solid #fff;
 }
 
-.heading{
-  font-size: 1.3rem;
-  color: #071952!important;
-}
-
-.headtwo{
-  font-size: 16px;
-}
-
-.logoimge{
-  width: 50px;
+.logoimge {
+  width: auto;
   height: 70px;
 }
 
+.colormenu:hover,
+.colormenu.active {
+  color: #ff0000e9 !important;
+}
+
+/* Header */
+
+.heading {
+  font-size: 1.3rem;
+  color: #071952 !important;
+}
+
+.headtwo {
+  font-size: 16px;
+}
+
+.mobmenulogo {
+  color: #0b2374;
+  font-weight: 600 !important;
+}
+
+.listlink {
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.fontlist {
+  font-size: 18px;
+}
+.fontlistS {
+  font-size: 25px;
+}
+
+.mobtwo {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
 @media only screen and (max-width: 1000px) {
-  .menucolor{
-    background-color: #EBF4F6;
-   }
-   .colormenu{
-      color: rgb(31, 31, 31)!important;
-   }
+  .topbar ul {
+    margin: 5px;
+  }
+  .mobone {
+    border-bottom: 1px solid rgb(87, 87, 87);
+  }
+  .midmob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .menucolor {
+    background-color: #ebf4f6;
+  } */
+  .colormenu {
+    color: rgb(31, 31, 31) !important;
+  }
 }

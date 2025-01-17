@@ -1,8 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}   
-body{
-    display: block;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+}
+body {
+  display: block;
+}
+
+.primary-text-color {
+  color: #ffffff;
+}
+
+.theme-text-color {
+  color: #ff0000e9;
 }

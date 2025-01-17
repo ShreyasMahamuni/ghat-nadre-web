@@ -1,5 +1,11 @@
 import React from "react";
-import { A11y, Autoplay, Navigation, Pagination } from "swiper/modules";
+import {
+  A11y,
+  Autoplay,
+  Navigation,
+  Pagination,
+  EffectCreative,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaChevronLeft } from "react-icons/fa";
 
@@ -27,18 +33,26 @@ function HeroSlider() {
   return (
     <div className={`top-slides container}`}>
       <Swiper
-        modules={[Autoplay, Navigation, Pagination, A11y]}
+        modules={[Autoplay, Navigation, Pagination, A11y, EffectCreative]}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
+        grabCursor={true}
+        effect={"creative"}
+        creativeEffect={{
+          prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        }}
         loop={true}
         slidesPerView={1}
         spaceBetween={0}
-        pagination={{
-          clickable: true,
-          dynamicBullets: true,
-        }}
+        pagination={false}
         navigation={{
           nextEl: ".custom-next",
           prevEl: ".custom-prev",
